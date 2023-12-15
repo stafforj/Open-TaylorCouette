@@ -1,0 +1,21 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     |
+    \\  /    A nd           | Web:      www.OpenFOAM.org
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Calculates the average value of one or more fields on a patch.
+
+\*---------------------------------------------------------------------------*/
+
+name    innercylinder;
+fields  (wallShearStress wallShearStressMean);
+
+surfaceFormat raw;
+
+operation average;
+#include "patch.cfg"
+
+// ************************************************************************* //

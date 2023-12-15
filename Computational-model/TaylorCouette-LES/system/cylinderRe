@@ -1,0 +1,21 @@
+
+// Geometry (in mm)
+
+    Eta	0.5; // radius ratio 
+    rO	100; // inner radius of outer cylinder
+    rI	#calc "$rO*$Eta"; // radius of inner cylinder
+    d	#calc "$rO-$rI"; // fluid gap
+    h	#calc "2*constant::mathematical::pi*$d"; // cylinder height 
+
+// Mesh
+    nD	80; // no. cells along fluid gap
+    nH	#calc "4.5*$nD"; // no. cells along height
+    nA	#calc "4.5*$nD";// no. cells in azimuthal direction
+
+// Operation
+
+    Re		8000;
+    kinvis	1.7e-06;
+    omega_i	#calc "($kinvis*$Re)/($rI*$d*1e-6)";
+
+

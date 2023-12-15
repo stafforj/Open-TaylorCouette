@@ -1,0 +1,27 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+application=`getApplication`
+
+# Create the base grid to be extruded 
+runApplication blockMesh
+
+# Extrude the grid into a cylinder 
+runApplication extrudeMesh
+
+# Remove the AMI boundaries and change number of boundaries from 6 to 4. 
+sed -i.bak '18s/6/4/' constant/polyMesh/boundary 
+sed -i.bak '30,41d' constant/polyMesh/boundary
+
+# Decompose the grid over the number of processors defined in decomposeParDict 
+runApplication decomposePar
+
+# This runs the application (in our case pisoFoam) 
+runApplication mpirun -np 48 $application -parallel
+
+# Sample average wallShearStress, wallShearStressMean
+#runApplication postProcess -func 'patchAverage' -latestTime
+# ----------------------------------------------------------------- end-of-file

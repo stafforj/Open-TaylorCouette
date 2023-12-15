@@ -1,0 +1,193 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     pisoFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         40; // Flow developing at 10s
+
+deltaT          0.001; // adjust to get maxCo < 0.5
+
+writeControl    adjustableRunTime;
+
+writeInterval   0.1;
+
+purgeWrite      10;
+
+writeFormat     binary;
+
+writePrecision  8;
+
+writeCompression uncompressed;
+
+timeFormat      general;
+
+timePrecision   8;
+
+runTimeModifiable false;
+
+//libs            ("libsampling.so"); // for line sampling 
+ 
+functions
+{
+   //#includeFunc    residuals
+   #includeFunc    Lambda2
+      
+    wallShearStress1
+    {
+	type		wallShearStress;
+	libs		("libfieldFunctionObjects.so");
+	enabled		true;
+	writeControl	writeTime;
+	patches		("innercylinder");
+    }
+
+    fieldAverage1
+    {
+	type		fieldAverage;
+	libs		("libfieldFunctionObjects.so");
+	enabled		true;
+	writeControl	writeTime;
+	fields
+	(
+	    U
+	    {
+		mean		on;
+		prime2Mean	on; //RMS
+		base		time;
+		window		5; // 5 second
+	    }
+
+	    p
+	    {
+		mean		on;
+		prime2Mean	off; //RMS
+		base		time;
+		window		5;
+	    }
+
+	    wallShearStress
+	    {
+		mean		on;
+		prime2Mean	off;
+		base		time;
+		window		5;
+	    }
+	);
+    }
+
+    sample_lines
+    {
+	type		sets;
+	enabled		true;
+	verbose		true;
+	interpolationScheme	cellPoint;
+	writeControl	runTime;
+	writeInterval	0.001; //1kHz sampling (also DT)
+	setFormat	raw;
+
+	fields 
+	(
+	    U
+	    UMean
+	    UPrime2Mean
+	    wallShearStressMean
+	);
+
+	sets
+	(
+		lineA
+		{
+		    type	uniform;
+		    axis	z;
+		    start	(0.05165 0 0);
+		    end		(0.05165 0 0.314);
+		    nPoints	1000;
+		}
+		
+		lineB
+		{
+		    type	uniform;
+		    axis	z;
+		    start	(0.0554 0 0);
+		    end		(0.0554 0 0.314);
+		    nPoints	1000;
+		}
+
+		lineC
+		{
+		    type	uniform;
+		    axis	z;
+		    start	(0.075 0 0);
+		    end		(0.075 0 0.314);
+		    nPoints	1000;
+		}
+
+		lineD
+		{
+		    type	uniform;
+		    axis	z;
+		    start	(0.09835 0 0);
+		    end		(0.09835 0 0.314);
+		    nPoints	1000;
+		}
+	);
+    }
+
+    yPlus1
+    {
+	type		yPlus;
+	libs		("libfieldFunctionObjects.so");
+	enabled		true;
+	executeControl	writeTime;
+	writeControl	writeTime;
+    }
+
+
+    CylAvgWSS
+    {
+	type            surfaceRegion;
+	libs            ("libfieldFunctionObjects.so");
+
+	writeControl    writeTime;
+	//writeInterval   1;
+
+	writeFields     false;
+	log             true;
+
+	regionType  patch;
+	name    innercylinder;
+	
+	fields  
+	(
+	    wallShearStress
+	    wallShearStressMean
+	);
+
+	surfaceFormat raw;
+
+	operation average;	
+    }
+
+}
+
+// ************************************************************************* //

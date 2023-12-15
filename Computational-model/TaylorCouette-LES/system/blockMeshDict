@@ -1,0 +1,132 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+#include "cylinderRe"
+
+backgroundMesh
+{
+    eta		$Eta; // radius ratio 
+    rOuter	$rO; // inner radius of outer cylinder
+    rInner	$rI; // radius of inner cylinder
+    gap		$d; // fluid gap
+    height	$h; // cylinder height 
+    nG 		$nD; // no. cells along fluid gap
+    nH		$nH; // no. cells along height
+} 
+
+convertToMeters 1e-3;
+
+vertices
+(
+    ($:backgroundMesh.rInner 0	0) //0
+    ($:backgroundMesh.rOuter 0	0) //1
+    ($:backgroundMesh.rOuter 1	0) //2
+    ($:backgroundMesh.rInner 1	0) //3
+
+    ($:backgroundMesh.rInner 0	$:backgroundMesh.height) //4
+    ($:backgroundMesh.rOuter 0	$:backgroundMesh.height) //5
+    ($:backgroundMesh.rOuter 1	$:backgroundMesh.height) //6
+    ($:backgroundMesh.rInner 1	$:backgroundMesh.height) //7
+   
+);
+
+blocks
+(
+
+// Gap zone
+    hex (0 1 2 3 4 5 6 7)
+    ($:backgroundMesh.nG 1 $:backgroundMesh.nH)
+    simpleGrading (((0.5 0.5 6)(0.5 0.5 0.167)) 1 1)
+);
+
+edges
+(
+);
+
+boundary
+(
+    inlet
+    {
+        type cyclic;
+	neighbourPatch outlet;
+        faces
+        (
+            (0 3 2 1)
+        );
+    }
+
+    AMI1
+    {
+        type patch;
+	//type cyclic;
+	//neighbourPatch AMI2;
+	//transform rotational;
+	//rotationAxis (0 1 0);
+	//rotationCentre (0 0 0);
+       	faces
+        (
+            (0 1 5 4)
+        );
+    }
+
+    AMI2
+    {
+        type patch;
+	//type cyclic;
+	//neighbourPatch AMI1;
+	//transform rotational;
+	//rotationAxis (0 1 0);
+	//rotationCentre (0 0 0);
+       	faces
+        (
+            (2 6 7 3)
+        );
+    }
+
+    outlet
+    {
+        type cyclic;
+	neighbourPatch inlet;
+        faces
+        (
+            (4 5 6 7)
+        );
+    }
+
+    innercylinder
+    {
+	type wall;
+	faces
+	(
+	    (0 4 7 3)
+	);
+    }
+
+    outercylinder
+    {
+	type wall;
+	faces
+	(
+	    (1 2 6 5)
+	);
+    }
+);
+
+mergePatchPairs
+(
+);
+
+// ************************************************************************* //
