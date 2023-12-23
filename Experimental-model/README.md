@@ -5,7 +5,10 @@
 Present concept
 ![concept](./Images/concept.png)
 
-Image of three items HERE
+Image of three components
+
+![components](./Images/TC-all-components.png)
+
 
 Image of mini chopper
 ![chopper](./Images/chopper.png)
