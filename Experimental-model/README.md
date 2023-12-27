@@ -55,7 +55,7 @@ Module enclosure and ventilation
 
 ## Device assembly
 
-Four steps are involved for assembling the device prior to experiment. These are shown below (1-4). Between steps 3 and 4, the liquid is added to the vessel. Note there will be a maximum liquid level that avoids leaks. The manufacturer usually prints this on the bowl for the chopper, however, it is important to check this again for the Taylor-Couette set-up before performing experiments.
+Four steps are involved for assembling the device prior to experiment. These are shown below (1-4). Between steps 2 and 3, the liquid is added to the vessel. Note there will be a maximum liquid level that avoids leaks (see _Concept_ schematic above). The manufacturer usually prints this on the bowl for the chopper, however, it is important to check this again for the Taylor-Couette set-up before performing experiments.
 
 ![assembly](./Images/device-assembly.png)
 
