@@ -6,9 +6,9 @@ This section presents the concept, bill of materials, physical construction, wir
 
 The basic components for a Taylor-Couette apparatus are a stationary outer cyliner, a rotating inner cylinder, and a motor to control the rotational speed of the inner cylinder. While this is a simple configuration in principle, the cost of this type of design can be significant (~£1000's). Furthermore, implementing a design which has adaptable settings such as speed and cylinder diameter adds complexity, cost, and may require extra technical assistance when disassembling/assembling the apparatus. Our device concept was based on a number of requirements:
 
-- Create a Taylor-Couette experiment that is accessible, low-cost and affordable (a target of under £50 was set)
-- Allow users to modulate flow regimes using rotational speed control of the inner cylinder
-- Extend the flow parameter space further by facilitating "hot-swappable" innner cylinders (no tools required)
+> - Create a Taylor-Couette experiment that is accessible, low-cost and affordable (a target of under £50 was set)
+> - Allow users to modulate flow regimes using rotational speed control of the inner cylinder
+> - Extend the flow parameter space further by facilitating "hot-swappable" innner cylinders (no tools required)
 
 To achieve an affordable design, and minimise the number of parts required for manufacturing, we utilised an off-the-shelf mini food chopper appliance which can be purchased for < £15. These choppers have some of the core components for the device, including a motor and a clear outer bowl that can facilitate flow visualisation.
 
