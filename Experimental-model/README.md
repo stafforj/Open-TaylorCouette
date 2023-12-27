@@ -4,19 +4,21 @@ This section presents the concept, physical construction, wiring, and device ass
 
 ## Concept
 
-The device concept was based on a number of requirements:
+The basic components for a Taylor-Couette apparatus are a stationary outer cyliner, a rotating inner cylinder, and a motor to control the rotational speed of the inner cylinder. While this is a simple configuration in principle, the cost of this type of design can be significant (~£1000's). Furthermore, implementing a design which has adaptable settings such as speed and cylinder diameter adds complexity, cost, and may require extra technical assistance when disassembling/assembling the apparatus. Our device concept was based on a number of requirements:
 
 - Create a Taylor-Couette experiment that is accessible, low-cost and affordable (a target of under £50 was set)
 - Allow users to modulate flow regimes using rotational speed control of the inner cylinder
 - Extend the flow parameter space further by facilitating "hot-swappable" innner cylinders (no tools required)
 
-To achieve an affordable design, and minimise the number of parts required for manufacturing, we utilised an off-the-shelf mini food chopper appliance which can be purchased for < £15. These choppers have some of the core components for the device, including a motor and a clear outer bowl that can facilitate flow visualisation. 
+To achieve an affordable design, and minimise the number of parts required for manufacturing, we utilised an off-the-shelf mini food chopper appliance which can be purchased for < £15. These choppers have some of the core components for the device, including a motor and a clear outer bowl that can facilitate flow visualisation.
 
-The main challenges which can restrict the chopper options are: (i) if the bowl has internal baffles, these can disrupt the Taylor-Couette flow; and (ii) if the bowl has a variable diameter along its height. Therefore, the recommendation is to source a mini chopper which has a near constant bowl diameter, and which has none or very small baffle width (e.g., < 0.6 mm).  
+The main challenges which can restrict the chopper options are: (i) if the bowl has internal baffles, these can disrupt the Taylor-Couette flow; and (ii) if the bowl has a variable diameter along its height. Therefore, the recommendation is to source a mini chopper which has a near constant bowl diameter, and which has none or very small baffle width (e.g., < 0.6 mm). We chose an Ambiano mini chopper which fits this description and is shown below.
+
+The second advantage of using this type of appliance is it allowed us to easily integrate the "hot-swappable" cylinder concept. The  
 
 ![concept](./Images/concept.png)
 
-Image of three components
+The final design consists of three core components shown here: (i) hot-swappable inner cylinder; (ii) motor rotation
 
 ![components](./Images/TC-all-components.png)
 
