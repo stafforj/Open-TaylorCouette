@@ -1,6 +1,6 @@
 # Build instructions
 
-This section presents the concept, physical construction, wiring, and device assembly for a low-cost Taylor-Couette flow visualisation experiment.
+This section presents the concept, bill of materials, physical construction, wiring, and device assembly for a low-cost Taylor-Couette flow visualisation experiment.
 
 ## Concept
 
