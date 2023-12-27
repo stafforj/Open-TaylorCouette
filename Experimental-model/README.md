@@ -43,6 +43,8 @@ The device is constructed from a mini food chopper, modified to rotate a cylinde
 ## Wiring
 Mini food choppers like the one used in this build have an on/off switch, a safety switch that ensures it cannot be operated without the lid in place, and a motor which rotates at a fixed speed. These components are all retained for the Taylor-Couette device. The motor is powered from mains AC voltage (240V). Variable speed is achieved by controlling the power to the motor from 0-100%, where 100% is achieved at the mains AC voltage. This was done by wiring in a bidirectional thyristor on the mains cable line before it enters the appliance. This is shown below in the wiring schematic and the assembly images (1-6) for the motor control module below. Note there is no need to disassemble the appliance casing at any point of this build. 
 
+[!WARNING] Please ...
+
 A heat sink is mounted to the TRIAC and is used to passively cool the device. An enclosure is used to avoid exposure to high temperatures and mount the display and power control buttons. To ensure cooling is not affected by the enclosure, the ventilation is designed to allow the user to orient the controller in any direction (horizontally or vertically) without introducing thermal issues. Note that this TRIAC controls power not speed, and we have observed that the 0-100% scale is non-linear. It is recommended to take measurements of cylinder speed (e.g. using a tachometer) to understand how the change in input power affects speed. This is, of course, essential for defining the correct Reynolds number ($Re = \omega r_i d / \nu$).   
 
 ![schematic](./Images/wiring-schematic.png)
