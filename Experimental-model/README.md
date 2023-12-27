@@ -2,6 +2,9 @@
 
 This section presents the concept, physical construction, wiring, and device assembly for a low-cost Taylor-Couette flow visualisation experiment. The experiment is capable of generating and visualising a wide range of hydrodynamic conditions (see image [here](https://github.com/stafforj/Taylor-Couette-Flow/blob/main/README.md) showing a sweep of Reynolds number). 
 
+
+![TCprofile](./Images/taylor-couette-profile)
+
 ## Concept
 
 The basic components for a Taylor-Couette apparatus are a stationary outer cyliner, a rotating inner cylinder, and a motor to control the rotational speed of the inner cylinder. While this is a simple configuration in principle, the cost of this type of design can be significant (~£1000's). Furthermore, implementing a design which has adaptable settings such as speed and cylinder diameter adds complexity, cost, and may require extra technical assistance when disassembling/assembling the apparatus. Our device concept was based on a number of requirements:
