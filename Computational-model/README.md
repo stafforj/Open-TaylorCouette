@@ -10,5 +10,5 @@ All details on the LES model and its usage are available in this open-access man
 
 Below shows a comparison between this model and other experimental and DNS studies for angular momentum (left) and root-mean-square azimuthal velocity fluctuation profiles across the fluid gap. This was used to refine the sub-grid-scale model coefficient ($C_w$).
 
-
+![LES-validation](./LES-validation.png)
 
