@@ -4,8 +4,5 @@ This numerical model simulates Taylor-Couette flow using Large-Eddy Simulations.
 
 This repository includes the complete OpenFOAM (v4) case file here for a validation test case we performed in our previously published work:
 
-Stafford, J., et al. Real-time Monitoring and Hydrodynamic Scaling of Shear Exfoliated Graphene. _2D Materials._ 2021;8:025029 [doi:10.1088/2053-1583/abdf2f](https://doi.org/10.1088/2053-1583/abdf2f).
+Stafford, J., et al. **Real-time Monitoring and Hydrodynamic Scaling of Shear Exfoliated Graphene**. _2D Materials._ 2021;8:025029 [doi:10.1088/2053-1583/abdf2f](https://doi.org/10.1088/2053-1583/abdf2f).
 
-
-
-Dong, S. Direct numerical simulation of turbulent Taylor–Couette flow. _Journal of Fluid Mechanics._ 2007;587:373-393. [doi:10.1017/S0022112007007367](https://doi.org/10.1017/S0022112007007367)
