@@ -41,8 +41,7 @@ The device is constructed from a mini food chopper, modified to rotate a cylinde
 ![construction](./Images/construction.png)
 
 ## Wiring
-Mini food choppers like the one used in this build have an on/off switch, a safety switch that ensures it cannot be operated without the lid in place, and a motor which rotates at a fixed speed. These components are all retained for the Taylor-Couette device. The motor is powered from mains AC voltage (240V). A variable speed is achieved by controlling the power to the motor from 0-100%, where 100% is achieved at the mains AC voltage. 
-
+Mini food choppers like the one used in this build have an on/off switch, a safety switch that ensures it cannot be operated without the lid in place, and a motor which rotates at a fixed speed. These components are all retained for the Taylor-Couette device. The motor is powered from mains AC voltage (240V). Variable speed is achieved by controlling the power to the motor from 0-100%, where 100% is achieved at the mains AC voltage. This was done by wiring in a bidirectional thyristor on the mains cable line before it enters the appliance. This is shown below in the schematic and the assembly images. There is no need to disassemble the appliance casing at any point of this build. 
 
 ![schematic](./Images/wiring-schematic.png)
 
