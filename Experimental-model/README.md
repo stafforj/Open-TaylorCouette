@@ -14,19 +14,16 @@ To achieve an affordable design, and minimise the number of parts required for m
 
 The main challenges which can restrict the chopper options are: (i) if the bowl has internal baffles, these can disrupt the Taylor-Couette flow; and (ii) if the bowl has a variable diameter along its height. Therefore, the recommendation is to source a mini chopper which has a near constant bowl diameter, and which has none or very small baffle width (note these baffles could be removed using a dremel tool). We chose an Ambiano mini chopper which fits this description and is shown below. The outer diamater varied from 101 mm (top) to 98 mm (base), and the four small baffles were < 0.6 mm width. Using an inner cylinder of diameter 80 mm, the fluid gap width ($d$) varied from 9 mm to 10.5 mm along the fluid height.  
 
-The second advantage of using this type of appliance is it allowed us to easily integrate the "hot-swappable" cylinder concept. Mini food choppers typically have removable inner blades to facilitate cleaning after use. The blades are rotated from below and held in place from above using an alignment pin attached to the lid of the bowl. We took advantage of this and created an inner cylinder which slots onto the motor shaft. This is shown in the schemtic below. The cylinder rotates about the axis and is held concentric with the outer cylinder using this alignment pin on the lid.
+The second advantage of using this type of appliance is it allowed straightforward integration of the "hot-swappable" cylinder concept. Mini food choppers typically have removable inner blades to facilitate their cleaning after use. The stainless steel blades are rotated from below and held in place from above using an alignment pin attached to the lid of the bowl. We took advantage of this and created an inner cylinder which slots onto the motor shaft. This is shown in the schemtic below. The cylinder rotates about the axis and is held concentric with the outer cylinder using this alignment pin on the lid. 
 
-The 
 ![concept](./Images/concept.png)
 
-The final design consists of three core components shown here: (i) an interchangeable inner cylinder; (ii) motor + clear outer cylinder (mini chopper); and (iii) module for controlling motor speed.
+The final design consists of three core components shown here: (i) an interchangeable inner cylinder; (ii) motor + clear outer cylinder (mini chopper); and (iii) module for controlling cylinder speed.
 
 ![components](./Images/TC-all-components.png)
 
-
 Image of the mini chopper used in this build
 ![chopper](./Images/chopper.png)
-
 
 ## Bill of Materials
 
@@ -39,13 +36,14 @@ Image of the mini chopper used in this build
 |Misc.|   | <ul><li>Wiring and heat shrink</li><li>Soldering Iron and solder</li><li>Glue</li><li>Electrical hand drill and drill bits</li></ul>|
 
 ## Construction
-The device is constructed from a mini food chopper, modified to rotate a cylinder at controllable rotational speeds. The speed control is necessary to adjust the flow behaviour and explore the flow instabilities that emerge at different Reynolds numbers ($R$). The estimated that the total cost of this is 
+The device is constructed from a mini food chopper, modified to rotate a cylinder at controllable rotational speeds.
 
 ![construction](./Images/construction.png)
 
 ## Wiring
+Mini food choppers like the one used in this build have an on/off switch, a safety switch that ensures it cannot be operated without the lid in place, and a motor which rotates at a fixed speed. These components are all retained for the Taylor-Couette device. The motor is powered from mains AC voltage (240V). A variable speed is achieved by controlling the power to the motor from 0-100%, where 100% is achieved at the mains AC voltage. 
 
-Wiring diagram
+
 ![schematic](./Images/wiring-schematic.png)
 
 Motor control unit
