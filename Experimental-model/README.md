@@ -1,6 +1,6 @@
 # Build instructions
 
-This section presents the concept, physical construction, wiring, and device assembly for a low-cost Taylor-Couette flow visualisation experiment. 
+This section presents the concept, physical construction, wiring, and device assembly for a low-cost Taylor-Couette flow visualisation experiment. The experiment is capable of generating and visualising a wide range of hydrodynamic conditions (see image [here](./README.md) showing a sweep of Reynolds number). 
 
 ## Concept
 
