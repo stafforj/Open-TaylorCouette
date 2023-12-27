@@ -14,7 +14,7 @@ To achieve an affordable design, and minimise the number of parts required for m
 
 The main challenges which can restrict the chopper options are: (i) if the bowl has internal baffles, these can disrupt the Taylor-Couette flow; and (ii) if the bowl has a variable diameter along its height. Therefore, the recommendation is to source a mini chopper which has a near constant bowl diameter, and which has none or very small baffle width (e.g., < 0.6 mm). We chose an Ambiano mini chopper which fits this description and is shown below.
 
-The second advantage of using this type of appliance is it allowed us to easily integrate the "hot-swappable" cylinder concept. The  
+The second advantage of using this type of appliance is it allowed us to easily integrate the "hot-swappable" cylinder concept. Mini food choppers typically have removable inner blades to facilitate cleaning after use. The blades are rotated from below and held in place from above using an alignment pin attached to the lid of the bowl. We took advantage of this and created an inner cylinder which slots onto the motor shaft. This is shown in the schemtic below. The cylinder is rotates about the axis and is held concentric with the outer cylinder using the alignment pin on the lid.      
 
 ![concept](./Images/concept.png)
 
