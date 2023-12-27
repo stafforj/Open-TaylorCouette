@@ -20,8 +20,8 @@ Image of mini chopper
 
 |Name               |QTY|Description                           |
 |:------------------|:-:|:-------------------------------------|
-|[Mini chopper]|1  |Mini food chopper. There are numerous choices. This build uses an Ambiano purchased from Aldi.|
-|[Motor controller board](https://www.amazon.co.uk/Controller-Regulator-Digital-Voltage-Thermostat/dp/B07SW4LXY9?pd_rd_w=i6ZY2&content-id=amzn1.sym.a509abed-8ef9-4dfc-a8ff-23f245737da1&pf_rd_p=a509abed-8ef9-4dfc-a8ff-23f245737da1&pf_rd_r=1MS1KVR6EB53WHCWNNQ2&pd_rd_wg=0FrMV&pd_rd_r=423a16b8-b44b-44d0-b718-bcb65539e7d0&pd_rd_i=B07SW4LXY9&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_pd_nav_hcs_rp_5_t)|1  |Bidirectional thyristor. The one used here is rated for very high power (up to 10kW) as it was what I had available. Many others with lower current/power rating that can be used. |
+|Mini food chopper|1  |Mini food chopper. There are numerous choices. This build uses a 200W Ambiano purchased from Aldi.|
+|[Motor controller board](https://www.amazon.co.uk/Controller-Regulator-Digital-Voltage-Thermostat/dp/B07SW4LXY9?pd_rd_w=i6ZY2&content-id=amzn1.sym.a509abed-8ef9-4dfc-a8ff-23f245737da1&pf_rd_p=a509abed-8ef9-4dfc-a8ff-23f245737da1&pf_rd_r=1MS1KVR6EB53WHCWNNQ2&pd_rd_wg=0FrMV&pd_rd_r=423a16b8-b44b-44d0-b718-bcb65539e7d0&pd_rd_i=B07SW4LXY9&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_pd_nav_hcs_rp_5_t)|1  |Bidirectional thyristor. The one used here is rated for very high power (up to 10kW) as I already had one available. Many other options are available with lower current/power rating that can be used.|
 |M3.5 screws|4  |12 mm long, for mounting top cover of motor controller to the enclosure body.|
 |Misc.|   | <ul><li>Wiring and heat shrink</li><li>Soldering Iron and solder</li><li>Glue</li><li>Electrical hand drill and drill bits</li></ul>|
 
