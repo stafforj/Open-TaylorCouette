@@ -67,5 +67,4 @@ Four steps are involved for assembling the device prior to experiment. These are
 > Check out our group's repositories on [UoB Mechanochemical Systems](https://github.com/uob-mechanochemical-systems). It includes a repository from our OpenLPE project, which implements automatic [speed control for mechanochemical mixers](https://github.com/uob-mechanochemical-systems/PID-Blender). This details how to implement PID control for AC motors inside kitchen blenders, and could be extended to this work if interested in adding closed-loop speed control for the Taylor-Couette experimental model described here. 
 
 Further information on the OpenLPE project is available through our open-access article:
->  Perez-Alvarez, D., Brown, J., Stafford, J. **Modification of kitchen blenders into controllable laboratory mixers for mechanochemical synthesis of atomically thin materials**. _HardwareX_, 2023, [doi:10.1016/j.ohx.2023.e00471](https://doi.org/10.1016/j.ohx.2023.e00471)
-
+>  Perez-Alvarez, D., Brown, J., Stafford, J. **Modification of kitchen blenders into controllable laboratory mixers for mechanochemical synthesis of atomically thin materials**. _HardwareX_, 2023;16:e00471 [doi:10.1016/j.ohx.2023.e00471](https://doi.org/10.1016/j.ohx.2023.e00471).
