@@ -53,7 +53,7 @@ Motor and cylinder control module
 Module enclosure and ventilation
 ![vents](./Images/module-vent.png)
 
-## Device assembly
+## Device assembly for experiments
 
 Four steps are involved for assembling the device prior to experiment. These are shown below (1-4). Between steps 2 and 3, the liquid is added to the vessel. Note there will be a maximum liquid level that avoids leaks (see _Concept_ schematic above). The manufacturer usually prints this on the bowl for the chopper, however, it is important to check this again for the Taylor-Couette set-up before performing experiments.
 
