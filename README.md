@@ -8,6 +8,6 @@ The experiment is capable of generating a wide range of hydrodynamic conditions 
 
 ![TCgif](./Experimental-model/Images/TCflow.gif)
 
-The Taylor vortex flow is apparent above, and the characteristic pattern of "bands" are also revealed when taking at an ensemble-average of the video frames (greyscale image below is an average of N = 1300 frames). The profile of image intensity is plotted adjacent this frame-average, indicating the transition between bands which occurs in a repeatable pattern (and away from the liquid-gas interface and cylinder base).  
+The Taylor vortex flow is apparent above, and the characteristic pattern of "bands" are also revealed when taking an ensemble-average of the video frames (greyscale image below is an average of N = 1300 frames). The profile of image intensity is plotted adjacent to this frame-average, indicating the transition between bands which occurs in a repeatable pattern (away from the liquid-gas interface and cylinder base).  
 
 ![TCprofile](./Experimental-model/Images/taylor-couette-profile.png)
