@@ -12,3 +12,6 @@ Below shows a comparison between this model and other experimental and DNS studi
 
 ![LES-validation](./LES-validation.png)
 
+Below are two snapshots of the flow field predicted using Direct Numerical Simulations (left) and this LES model (right). This result is presented as Figure S7 in our previous article referenced above ([doi:10.1088/2053-1583/abdf2f](https://doi.org/10.1088/2053-1583/abdf2f)).
+
+![LESvsDNS](./LESmodel-vs-DNS.png)
