@@ -4,7 +4,7 @@ _Open-source tools that can be used to explore the fluid dynamics of Taylor-Coue
 
 ![TCdevice](./Experimental-model/Images/taylor-couette-flow-device.png)
 
-The experiment is capable of generating a wide range of hydrodynamic conditions and flow instabilities. As evidenced by the sweep of Reynolds number above (where $Re = \frac{\omega r_i d}{\nu}$). The flow and Taylor vortices were visualised using a water-based rheoscopic fluid, colored using food dye. Another example is shown in the short clip below.  
+The experiment is capable of generating a wide range of hydrodynamic conditions and flow instabilities. As evidenced by the sweep of Reynolds number above (where $Re = \frac{\omega r_i d}{\nu}$, $\omega$ and $r_i$ are rotational speed and radius of the inner cylinder, $d$ is the fluid gap, and $\nu$ is the kinematic viscosity of the liquid). The flow and Taylor vortices were visualised using a water-based rheoscopic fluid, colored using food dye. Another example is shown in the short clip below.  
 
 ![TCgif](./Experimental-model/Images/TCflow.gif)
 
